@@ -19,7 +19,7 @@ function createArr() {
 }
 */
 ////////////////////////////////////////
-/*const obj = { from: 1, to: 10 };
+const obj = { from: 1, to: 10 };
 
 function createArr() {
   const arr = [];
@@ -28,9 +28,10 @@ function createArr() {
   }
   this.arr = arr;
 }
-createArr.bind(obj);
-console.log(obj.arr);////всеодно видає undefined*/
-///////////////////////////////////////////
+const Bind = createArr.bind(obj);
+Bind();
+console.log(Bind);////всеодно видає undefined
+///////////////////////////////////////
 /*const obj = { from: 1, to: 10 };
 
 function createArr() {
