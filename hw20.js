@@ -6,9 +6,10 @@ Assign this arr as obj property
 
 Create 3 solutions Solution 1 without bind, call or apply
 Solution 2 with bind Solution 3 with call or apply*/
+/*
+const obj = { from: 1, to: 10 };
 
-const createArr = ({from, to}) => {
-  const {from, to} = obj;//це я чесно знайшла в інтернеті і не розумію чого так, бо коли я писала навпаки воно видавало помилку
+function createArr() {
   const arr = [];
   for (let i = from; i <= to; i++) {
     arr.push(i);
@@ -16,43 +17,38 @@ const createArr = ({from, to}) => {
     obj.arr = arr;
     console.log(obj.arr);
 }
-const randObj = { from: 1, to: 10 };
-createArr(randObj);
-console.log(randObj.arr);
+*/
 ////////////////////////////////////////
-const createArr = () => {
-  const { from, to } = this;
+/*const obj = { from: 1, to: 10 };
+
+function createArr() {
   const arr = [];
-  for (let i = from; i <= to; i++) {
+  for (let i = this.from; i <= this.to; i++) {
     arr.push(i);
   }
   this.arr = arr;
 }
-
-const secObj = { from: 1, to: 10 };
-const boundCreateArr = createArr.bind(secObj);
-boundCreateArr();
-console.log(secObj.arr);
+createArr.bind(obj);
+console.log(obj.arr);////всеодно видає undefined*/
 ///////////////////////////////////////////
-const createArr = () => {
-  const { from, to } = this;
+/*const obj = { from: 1, to: 10 };
+
+function createArr() {
   const arr = [];
-  for (let i = from; i <= to; i++) {
+  for (let i = this.from; i <= this.to; i++) {
     arr.push(i);
   }
   this.arr = arr;
 }
-
-const myObj = { from: 1, to: 10};
-createArr.call(myObj);
-console.log(myObj.arr);
+createArr.call(obj);
+console.log(obj.arr);*/
 ////////////////////////////////////////////////////////
 //Calculator
 //Create obj with property result
 //Create methods that calculates +, -, *, /
 //Make possible to call one function after another
 //Use correct method creation
-
+/*
 const calculator = {
     result: 0,
     sum: function (num) {
@@ -74,4 +70,4 @@ const calculator = {
 };
 
 calculator.sum(2).sum(2).mul(4);
-console.log(calculator.result);
+console.log(calculator.result);*/
