@@ -6,7 +6,7 @@ Assign this arr as obj property
 
 Create 3 solutions Solution 1 without bind, call or apply
 Solution 2 with bind Solution 3 with call or apply*/
-/*
+
 const obj = { from: 1, to: 10 };
 
 function createArr() {
@@ -17,7 +17,7 @@ function createArr() {
     obj.arr = arr;
     console.log(obj.arr);
 }
-*/
+
 ////////////////////////////////////////
 const obj = { from: 1, to: 10 };
 
@@ -32,7 +32,7 @@ const Bind = createArr.bind(obj);
 Bind();
 console.log(Bind);////всеодно видає undefined
 ///////////////////////////////////////
-/*const obj = { from: 1, to: 10 };
+const obj = { from: 1, to: 10 };
 
 function createArr() {
   const arr = [];
@@ -42,14 +42,14 @@ function createArr() {
   this.arr = arr;
 }
 createArr.call(obj);
-console.log(obj.arr);*/
-////////////////////////////////////////////////////////
+console.log(obj.arr);
+////////////////////////////////////////
 //Calculator
 //Create obj with property result
 //Create methods that calculates +, -, *, /
 //Make possible to call one function after another
 //Use correct method creation
-/*
+
 const calculator = {
     result: 0,
     sum: function (num) {
@@ -71,4 +71,4 @@ const calculator = {
 };
 
 calculator.sum(2).sum(2).mul(4);
-console.log(calculator.result);*/
+console.log(calculator.result);
