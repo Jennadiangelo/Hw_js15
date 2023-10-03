@@ -10,11 +10,7 @@ function printNumber() {
       if (num <= 5) {
       console.log(num);
           num++;
-    } else {
-      clearInterval(sec);
-      }
-    };
-    print();
-    
+      } 
+    }
 }
 printNumber();
