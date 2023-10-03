@@ -43,7 +43,11 @@ function createArr() {
 }
 createArr.call(obj);
 console.log(obj.arr);
+<<<<<<< HEAD
 ////////////////////////////////////////////////////////
+=======
+////////////////////////////////////////
+>>>>>>> 25e9780c5da3866e255d64969de3e2d11fbb6698
 //Calculator
 //Create obj with property result
 //Create methods that calculates +, -, *, /
@@ -71,4 +75,8 @@ const calculator = {
 };
 
 calculator.sum(2).sum(2).mul(4);
+<<<<<<< HEAD
 console.log(calculator.result);
+=======
+console.log(calculator.result);
+>>>>>>> 25e9780c5da3866e255d64969de3e2d11fbb6698
