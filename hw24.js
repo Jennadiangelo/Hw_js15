@@ -53,3 +53,50 @@ randomPromise()
   .catch((randnum) => {
     console.log(randnum);
   });
+
+ /* Server
+Create a function getUserData
+getUserData receives id as a param
+getUserData should return promise
+Find user by id
+If no users found throw Error
+Add delay for 1 second
+*/
+const users = [
+  {
+    id: 1,
+    name: "Taras",
+    age: 30,
+    movies: [],
+  },
+  {
+    id: 2,
+    name: "Kate",
+    age: 45,
+    movies: ["Titanic", "Avatar"],
+  },
+];
+
+const getUserData = (id) => {
+return new Promise((resolve, reject) => {
+  setTimeout(() => {
+      const user = users.find(user => user.id === 1||2);
+      if (user) {
+        resolve(user);
+      } else {
+        reject("404 not found");
+      }
+    }, 1000); 
+  });
+};
+
+// Example usage:
+getUserData()
+  .then((user) => {
+    console.log(user);
+  })
+  .catch(() => {
+    throw Error("404 not found");
+  });
+
+
